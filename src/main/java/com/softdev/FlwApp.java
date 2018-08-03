@@ -5,7 +5,7 @@ import org.flywaydb.core.Flyway;
 public class FlwApp {
 
 
-    public static void main(String[] args) {
+    public static void flw(String[] args) {
 
         String url = "jdbc:postgresql://192.168.1.137:5432/postgres?currentSchema=orders";
         String user = "postgres";
