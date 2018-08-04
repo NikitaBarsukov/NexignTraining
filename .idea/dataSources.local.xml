@@ -10,5 +10,10 @@
       <user-name>postgres</user-name>
       <introspection-schemas>postgres:@</introspection-schemas>
     </data-source>
+    <data-source name="heroku" uuid="05b16d37-af7d-4ede-8384-6794f7cece82">
+      <database-info product="" version="" jdbc-version="" driver-name="" driver-version="" />
+      <secret-storage>master_key</secret-storage>
+      <first-sync>true</first-sync>
+    </data-source>
   </component>
 </project>

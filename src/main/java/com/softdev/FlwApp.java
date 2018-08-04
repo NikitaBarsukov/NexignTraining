@@ -7,9 +7,9 @@ public class FlwApp {
 
     public static void flw(String[] args) {
 
-        String url = "jdbc:postgresql://192.168.1.137:5432/postgres?currentSchema=orders";
-        String user = "postgres";
-        String password = "qwerty";
+        String url = "jdbc:postgresql://ec2-54-228-251-254.eu-west-1.compute.amazonaws.com:5432/d1sphsh3sk42u4?ssl=true&sslfactory=org.postgresql.ssl.NonValidatingFactory";
+        String user = "dwwublhcwmgikj";
+        String password = "4d749d66d00b50a93931f28ae63f0cdf1337dfd3397baa47b941dce63df57b1e";
 
         Flyway flyway = new Flyway();
         flyway.setDataSource(url,user,password);

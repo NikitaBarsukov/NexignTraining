@@ -9,8 +9,8 @@
     </database>
     <schema id="3" parent="2" name="public">
       <ObjectId>2200</ObjectId>
-      <IntrospectionTimestamp>2018-08-03.22:56:49.278</IntrospectionTimestamp>
-      <IntrospectionStateNumber>580</IntrospectionStateNumber>
+      <IntrospectionTimestamp>2018-08-04.02:03:58.223</IntrospectionTimestamp>
+      <IntrospectionStateNumber>583</IntrospectionStateNumber>
       <Current>1</Current>
       <Visible>1</Visible>
     </schema>
@@ -62,11 +62,11 @@
     </table>
     <table id="14" parent="3" name="orders">
       <ObjectId>16390</ObjectId>
-      <StateNumber>567</StateNumber>
+      <StateNumber>583</StateNumber>
     </table>
     <table id="15" parent="3" name="users">
       <ObjectId>16384</ObjectId>
-      <StateNumber>567</StateNumber>
+      <StateNumber>583</StateNumber>
     </table>
     <column id="16" parent="12" name="installed_rank">
       <Position>1</Position>
@@ -204,12 +204,21 @@
       <RefKeyName>users_pkey</RefKeyName>
       <RefColNames>id</RefColNames>
     </foreign-key>
-    <column id="39" parent="15" name="fio">
+    <foreign-key id="39" parent="14" name="orders_usr_fkey1">
+      <ObjectId>16469</ObjectId>
+      <ColNames>usr</ColNames>
+      <RefTableId>16384</RefTableId>
+      <RefColPositions>3</RefColPositions>
+      <RefTableName>users</RefTableName>
+      <RefKeyName>users_pkey</RefKeyName>
+      <RefColNames>id</RefColNames>
+    </foreign-key>
+    <column id="40" parent="15" name="fio">
       <Position>2</Position>
       <DataType>varchar(2048)|0</DataType>
       <StateNumber>556</StateNumber>
     </column>
-    <column id="40" parent="15" name="id">
+    <column id="41" parent="15" name="id">
       <Position>3</Position>
       <DataType>integer|0</DataType>
       <NotNull>1</NotNull>
@@ -217,12 +226,12 @@
       <SequenceName>users_id_seq</SequenceName>
       <DefaultExpression>nextval(&apos;users_id_seq&apos;::regclass)</DefaultExpression>
     </column>
-    <index id="41" parent="15" name="users_pkey">
+    <index id="42" parent="15" name="users_pkey">
       <ObjectId>16430</ObjectId>
       <ColNames>id</ColNames>
       <Unique>1</Unique>
     </index>
-    <key id="42" parent="15" name="users_pkey">
+    <key id="43" parent="15" name="users_pkey">
       <ObjectId>16431</ObjectId>
       <ColNames>id</ColNames>
       <UnderlyingIndexName>users_pkey</UnderlyingIndexName>
